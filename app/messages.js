@@ -14,8 +14,9 @@ router.post('/',(req, res) => {
         message: req.body.message,
         data: date,
     };
+    const message = ('./messages/');
 
-    fs.writeFileSync(`${date}.txt`, JSON.stringify(messageObj));
+    fs.writeFileSync( message + `${date}.txt`, JSON.stringify(messageObj));
     res.send(messageObj);
 });
 
