@@ -1,7 +1,7 @@
 const express = require('express');
 const fileDb = require('./initMessage');
 const app = express();
-const port = 8002;
+const port = 8000;
 fileDb.init();
 
 const message = require('./app/messages');
